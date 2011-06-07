@@ -1,0 +1,89 @@
+{% extends "../common/index.html" %}
+  {% block content %}
+  <div id="string"><marquee behavior="scroll" direction="left" scrollamount="8"> <font color="blue" size = "+1">
+    Если программа тебе понятна, значит, она уже устарела.(Правило Биттона)
+  </marquee></div>
+ <div id="nav">
+    <button id="button1" >О кафедре</button>
+    <button id="button2" >Расписание занятий</button>
+    <button id="button3" >Студенты кафедры</button>
+	<button id="button4" >Это пригодится</button>
+	<button id="button5" >Развлечения</button>
+    <button id="button6" onClick="window.location.href = '/contact'">Контактная информация</button>
+	<button id="button7" onClick="window.location.href = '/forum'">Форум</button>
+  </div>
+  
+  <div id="layer_open_button1">
+      <ul id="the_menu1">
+        <li><a href = "/history" >История</a></li>
+        <li><a href = "/teachers">Преподаватели</a></li>
+        <li><a href = "/applicants">Абитуриентам</a></li> 
+  </div>
+  <div id="layer_open_button2">
+      <ul id="the_menu2">
+        <li><a href = "/1course">1 курс</a></li>
+        <li><a href = "/2course">2 курс</a></li>
+        <li><a href = "/3course">3 курс</a></li>
+		<li><a href = "/4course">4 курс</a></li>
+      </ul>
+  </div>
+  <div id="layer_open_button3">
+      <ul id="the_menu3">
+        <li><a href = "/bachelors">Бакалавры</a></li>
+        <li><a href = "/masters">Магистры</a></li>
+      </ul>
+  </div>
+  <div id="layer_open_button4">
+      <ul id="the_menu4">
+        <li><a href = "/ip">IP-calculator</a></li>
+        <li><a href = "/simplex">Симплекс-метод онлайн</a></li>
+        <li><a href = "/translate">Нахождение обратной матрицы</a></li>
+		<li><a href = "/slu">Решение СЛУ</a></li>
+      </ul>
+  </div>
+  <div id="layer_open_button5">
+      <ul id="the_menu5">
+        <li><a href = "/video">Видеоролики</a></li>
+        <li><a href = "/games">Игры</a></li>
+      </ul>
+  </div>
+   <div id="aside">
+     <div id="calendar">
+    <center><embed src="http://oyama-do.my1.ru/SWF/calendar.swf" width="200" height="200" wmode="transparent" type="application/x-shockwave-flash"></embed></center>
+    </div>
+    <h3>Статистика подготовки студентов к экзаменам, курсовым и т.п.</h3>
+    <p>58% студентов открывают материал за день до экзамена</p>
+    <p>22% студетов зубрят на протяжении недели до экзамена</p>
+    <p>и только 20% затрачивают на подготовку более двух недель</p>
+    <div id="cse" style="width: 250px;">Loading</div>
+	<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+	<script type="text/javascript"> 
+  		google.load('search', '1', {language : 'ru'});
+  		google.setOnLoadCallback(function() {
+    		var customSearchControl = new google.search.CustomSearchControl('007621152992589914345:yhuhbu6wndi');
+    		customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
+    		customSearchControl.draw('cse');
+  		}, true);
+	</script>
+	<link rel="stylesheet" href="http://www.google.com/cse/style/look/default.css" type="text/css" />
+   </div> 
+  <div id="content4"> 
+   
+       <center>
+	   <h1>Решение СЛУ</h1>
+	   <p>Системой m линейных уравнений с n неизвестными называется система вида
+				<p><img src = "image/slu1.gif"></p>
+где aij и bi (i=1,…,m; b=1,…,n) – некоторые известные числа, а x1,…,xn – неизвестные. 
+В обозначении коэффициентов aij первый индекс iобозначает номер уравнения, а второй j – номер неизвестного, при котором стоит этот коэффициент.
+<p><img src = "image/slu2.gif"></p>
+Коэффициенты при неизвестных будем записывать в виде матрицы , которую назовём матрицей системы.
+Числа, стоящие в правых частях уравнений, b1,…,bm называются свободными членами.
+Совокупность n чисел c1,…,cn называется решением данной системы, если каждое уравнение системы обращается в равенство после подстановки в него чисел c1,…,cn вместо соответствующих неизвестных x1,…,xn.
+  <p><a href = "http://www.math-pr.com/equations_1.php">Решение системы линейных уравнений</a></p>
+  <a href = "/main">Вернуться на главную страницу</a>
+  </center>
+  </div>
+  
+   {% endblock %}
+  
+  

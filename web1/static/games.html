@@ -1,0 +1,121 @@
+{% extends "../common/index.html" %}
+  {% block content %}
+  <div id="string"><marquee behavior="scroll" direction="left" scrollamount="8"> <font color="blue" size = "+1">
+   …И от злости она повесилась на собственной косе, потому что он точно посчитал, сколько капель в море, сколько песчинок в пустыне и сколько звезд на небе. Так выпьем же за кибернетику! (Кавказская пленница, или новые приключения Шурика)
+  </marquee></div>
+ <div id="nav">
+    <button id="button1" >О кафедре</button>
+    <button id="button2" >Расписание занятий</button>
+    <button id="button3" >Студенты кафедры</button>
+	<button id="button4" >Это пригодится</button>
+	<button id="button5" >Развлечения</button>
+    <button id="button6" onClick="window.location.href = '/contact'">Контактная информация</button>
+	<button id="button7" onClick="window.location.href = '/forum'">Форум</button>
+  </div>
+  
+  <div id="layer_open_button1">
+      <ul id="the_menu1">
+        <li><a href = "/history" >История</a></li>
+        <li><a href = "/teachers">Преподаватели</a></li>
+        <li><a href = "/applicants">Абитуриентам</a></li> 
+  </div>
+  <div id="layer_open_button2">
+      <ul id="the_menu2">
+        <li><a href = "/1course">1 курс</a></li>
+        <li><a href = "/2course">2 курс</a></li>
+        <li><a href = "/3course">3 курс</a></li>
+		<li><a href = "/4course">4 курс</a></li>
+      </ul>
+  </div>
+  <div id="layer_open_button3">
+      <ul id="the_menu3">
+        <li><a href = "/bachelors">Бакалавры</a></li>
+        <li><a href = "/masters">Магистры</a></li>
+      </ul>
+  </div>
+  <div id="layer_open_button4">
+      <ul id="the_menu4">
+        <li><a href = "/ip">IP-calculator</a></li>
+        <li><a href = "/simplex">Симплекс-метод онлайн</a></li>
+        <li><a href = "/translate">Нахождение обратной матрицы</a></li>
+		<li><a href = "/slu">Решение СЛУ</a></li>
+      </ul>
+  </div>
+  <div id="layer_open_button5">
+      <ul id="the_menu5">
+        <li><a href = "/video">Видеоролики</a></li>
+        <li><a href = "/games">Игры</a></li>
+      </ul>
+  </div>
+   <div id="aside">
+     <div id="calendar">
+    <center><embed src="http://oyama-do.my1.ru/SWF/calendar.swf" width="200" height="200" wmode="transparent" type="application/x-shockwave-flash"></embed></center>
+    </div>
+    <h3>Статистика подготовки студентов к экзаменам, курсовым и т.п.</h3>
+    <p>58% студентов открывают материал за день до экзамена</p>
+    <p>22% студетов зубрят на протяжении недели до экзамена</p>
+    <p>и только 20% затрачивают на подготовку более двух недель</p>
+    <div id="cse" style="width: 250px;">Loading</div>
+	<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+	<script type="text/javascript"> 
+  		google.load('search', '1', {language : 'ru'});
+  		google.setOnLoadCallback(function() {
+    		var customSearchControl = new google.search.CustomSearchControl('007621152992589914345:yhuhbu6wndi');
+    		customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
+    		customSearchControl.draw('cse');
+  		}, true);
+	</script>
+	<link rel="stylesheet" href="http://www.google.com/cse/style/look/default.css" type="text/css" />
+   </div> 
+     <div id="content5"> 
+   
+   
+   <center>
+   <h2>Игры</h2>
+   <script type="text/javascript"> function displ(ddd) { if (document.getElementById(ddd).style.display == 'none') {document.getElementById(ddd).style.display = 'block'} else {document.getElementById(ddd).style.display = 'none'} } </script>
+      <a href="javascript: displ('var')"> Игра Mahjong</a> 
+<div id="var" style="display: none;"> 
+	<embed src="games/index.swf" pluginspage="http://www.macromedia.com/shockwave/down..." type="application/x-shockwave-flash" width="512" height="384" border="0">
+	</embed>
+<p><a href="javascript: displ('var')"> Закрыть текст и читать далее.</a></p>
+</center>
+
+<br><br>
+<center>
+<script language=JavaScript> 
+function show_hide_div() 
+{ 
+   var obj = document.getElementById("hiddendiv"); 
+   if (obj.style.display == "none") obj.style.display = ""; 
+   else obj.style.display = "none"; 
+   return false; 
+} 
+</script> 
+<a href="#" onClick="return show_hide_div()">Игра IceRacer</a> 
+<div id="hiddendiv" style="display:none"><embed src="games/iceracer.swf" pluginspage="http://www.macromedia.com/shockwave/down..." type="application/x-shockwave-flash" width="512" height="384" border="0">
+	</embed></div>
+</center>
+
+<br><br>
+<center>
+<a href="javascript:void(null)" id="id1" 
+onclick="if(document.getElementById('id2').style.display=='none') {
+document.getElementById('id2').style.display='block';
+document.getElementById('id1').innerHTML='Остановить игру';
+}else{
+document.getElementById('id2').style.display='none';
+document.getElementById('id1').innerHTML='Игра Ping Pong';}">Игра Ping Pong</a><br />
+<div id="id2" style="display:none;"><embed src="games/kingpong.swf" pluginspage="http://www.macromedia.com/shockwave/down..." type="application/x-shockwave-flash" width="512" height="384" border="0">
+	</embed></div>
+</center>
+
+<center>
+<br><br>
+  <a href = "/main">Вернуться на главную страницу</a>
+  </center>
+       
+  </div>
+  
+   {% endblock %}
+  
+  

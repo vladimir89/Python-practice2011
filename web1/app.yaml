@@ -1,0 +1,69 @@
+application: unforgiventestapp
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /image
+  static_dir: image
+  
+- url: /games
+  static_dir: games
+
+- url: /js
+  static_dir: js
+
+
+- url: /main.*
+  script: /main/main.py 
+
+- url: /forum.*
+  script: forum/forum.py
+
+- url: /history.*
+  script: static/static.py
+  
+- url: /contact.*
+  script: static/static.py
+  
+- url: /teachers.*
+  script: static/static.py
+  
+- url: /applicants.*
+  script: static/static.py
+  
+- url: /1course.*
+  script: static/static.py
+  
+- url: /2course.*
+  script: static/static.py
+
+- url: /3course.*
+  script: static/static.py
+  
+- url: /4course.*
+  script: static/static.py
+  
+- url: /bachelors.*
+  script: static/static.py
+  
+- url: /masters.*
+  script: static/static.py
+
+- url: /ip.*
+  script: static/static.py
+  
+- url: /simplex.*
+  script: static/static.py
+  
+- url: /translate.*
+  script: static/static.py
+  
+- url: /slu.*
+  script: static/static.py
+  
+- url: /video.*
+  script: static/static.py
+  
+- url: /games.*
+  script: static/static.py

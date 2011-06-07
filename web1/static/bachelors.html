@@ -1,0 +1,169 @@
+{% extends "../common/index.html" %}
+  {% block content %}
+  <div id="string"><marquee behavior="scroll" direction="left" scrollamount="8"> <font color="blue" size = "+1">
+    Любой дурак может написать код, понятный компьютеру. Хороший программист пишет код, понятный человеку. (Мартин Фаулер)
+  </marquee></div>
+ <div id="nav">
+    <button id="button1" >О кафедре</button>
+    <button id="button2" >Расписание занятий</button>
+    <button id="button3" >Студенты кафедры</button>
+	<button id="button4" >Это пригодится</button>
+	<button id="button5" >Развлечения</button>
+    <button id="button6" onClick="window.location.href = '/contact'">Контактная информация</button>
+	<button id="button7" onClick="window.location.href = '/forum'">Форум</button>
+  </div>
+  
+  <div id="layer_open_button1">
+      <ul id="the_menu1">
+        <li><a href = "/history" >История</a></li>
+        <li><a href = "/teachers">Преподаватели</a></li>
+        <li><a href = "/applicants">Абитуриентам</a></li> 
+  </div>
+  <div id="layer_open_button2">
+      <ul id="the_menu2">
+        <li><a href = "/1course">1 курс</a></li>
+        <li><a href = "/2course">2 курс</a></li>
+        <li><a href = "/3course">3 курс</a></li>
+		<li><a href = "/4course">4 курс</a></li>
+      </ul>
+  </div>
+  <div id="layer_open_button3">
+      <ul id="the_menu3">
+        <li><a href = "/bachelors">Бакалавры</a></li>
+        <li><a href = "/masters">Магистры</a></li>
+      </ul>
+  </div>
+  <div id="layer_open_button4">
+      <ul id="the_menu4">
+        <li><a href = "/ip">IP-calculator</a></li>
+        <li><a href = "/simplex">Симплекс-метод онлайн</a></li>
+        <li><a href = "/translate">Нахождение обратной матрицы</a></li>
+		<li><a href = "/slu">Решение СЛУ</a></li>
+      </ul>
+  </div>
+  <div id="layer_open_button5">
+      <ul id="the_menu5">
+        <li><a href = "/video">Видеоролики</a></li>
+        <li><a href = "/games">Игры</a></li>
+      </ul>
+  </div>
+   <div id="aside">
+     <div id="calendar">
+    <center><embed src="http://oyama-do.my1.ru/SWF/calendar.swf" width="200" height="200" wmode="transparent" type="application/x-shockwave-flash"></embed></center>
+    </div>
+    <h3>Статистика подготовки студентов к экзаменам, курсовым и т.п.</h3>
+    <p>58% студентов открывают материал за день до экзамена</p>
+    <p>22% студетов зубрят на протяжении недели до экзамена</p>
+    <p>и только 20% затрачивают на подготовку более двух недель</p>
+    <div id="cse" style="width: 250px;">Loading</div>
+	<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+	<script type="text/javascript"> 
+  		google.load('search', '1', {language : 'ru'});
+  		google.setOnLoadCallback(function() {
+    		var customSearchControl = new google.search.CustomSearchControl('007621152992589914345:yhuhbu6wndi');
+    		customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
+    		customSearchControl.draw('cse');
+  		}, true);
+	</script>
+	<link rel="stylesheet" href="http://www.google.com/cse/style/look/default.css" type="text/css" />
+   </div> 
+  <div id="content3"> 
+   
+   	  
+   <center>
+   <h2>Бакалавры</h2>
+   <center><img src="image/students.jpg"></center>
+	<br><br>
+  <h3>Список группы ИМ-100301</h3>
+	</center>
+ 
+ <p>1. Артёмов Ростислав Валерьевич </p>
+ <p>2. Бравилов Александр Андреевич</p>
+ <p>3. Бубенщиков Сергей Владимирович </p>
+ <p>4. Володин Кирилл Дмитриевич </p>
+ <p>5. Глазков Юрий Дмитриевич</p>
+ <p>6. Елтышев Максим Сергеевич </p>
+ <p>7. Заварницын Роман Сергеевич</p>
+ <p>8. Загуменный Антон Павлович </p>
+ <p>9. Ковалевская Анастасия Станиславовна</p>
+ <p>10. Курицына Дарья Валерьевна</p> 
+ <p>11. Лапин Антон Владиленович</p>
+ <p>12. Лыгин Евгений Сергеевич </p>
+ <p>13. Лыпенко Анастасия Сергеевна</p>
+ <p>14. Патрушев Алексей Эдуардович</p>
+ <p>15. Пегушев Андрей Иванович</p>
+ <p>16. Плеханов Марк Михайлович</p>
+ <p>17. Рябцева Кристина Сергеевна</p> 
+ <p>18. Сосунов Виталий Артурович</p>
+ <p>19. Трубникова Полина Сергеевна</p>
+ <p>20. Хасангатина Юлия Марсельевна</p>
+ <p>21. Шафорост Маргарита Анатольевна</p>
+ <p>22. Шевчук Георгий Константинович</p>
+ <p>23. Шмарин Сергей Александрович </p>
+ <br><br>
+ 
+ <center>
+  <h3>Список группы ИМ-290301</h3>
+	</center>
+	<p>1. Боталова Мария Николаевна</p>
+	<p>2. Валиев Альберт Марсельевич  </p>
+	<p>3. Коньков Сергей Александрович  </p>
+	<p>4. Корнишин Дмитрий Игоревич  </p>
+	<p>5. Огарков Сергей Вадимович   </p>
+	<p>6. Пономарев Дмитрий Николаевич</p>
+	<p>7. Потапенко Глеб Михайлович </p>
+	<p>8. Рамазанов Вячеслав Ринатович</p>
+	<p>9. Романенко Юрий Валентинович</p>
+	<p>10. Склярова Светлана Валерьевна</p>
+	<p>11. Солодянкин Денис Анатольевич </p>
+	<p>12. Хмелинин Сергей Игоревич </p>
+	<br><br>
+		<center>
+  <h3>Список группы ИМ-38041</h3>
+	</center>
+	<p><a href = "http://vkontakte.ru/ilyahawk" target = "_blank">1. Гарифулин Илья Альбертович</a></p>
+	<p><a href = "http://vkontakte.ru/goncharoff" target = "_blank">2. Гончаров Андрей Сергеевич</a></p>
+	<p><a href = "http://vkontakte.ru/artmax" target = "_blank">3. Елтышев Артем Сергеевич</a></p>
+	<p><a href = "http://vkontakte.ru/tomazykova" target = "_blank">4. Зыкова Тамара Викторовна</a></p>
+	<p><a href = "http://vkontakte.ru/id20942163" target = "_blank">5. Калинина Анна Николаевна</a></p>
+	<p><a href = "http://vkontakte.ru/unforgiven89" target = "_blank">6. Круговой Евгений Анатольевич</a></p>
+	<p><a href = "http://vkontakte.ru/mr.alexmelnikov" target = "_blank">7. Мельников Алексей Евгеньевич</a></p>
+	<p><a href = "http://vkontakte.ru/pogadaew" target = "_blank">8. Погадаев Александр Сергеевич</a></p>
+	<p><a href = "http://vkontakte.ru/vahabit" target = "_blank">9. Прохоров Иван Владимирович</a></p>
+	<p><a href = "http://vkontakte.ru/saperoff" target = "_blank">10. Саперов Николай Андреевич</a></p>
+	<p><a href = "http://vkontakte.ru/elamaunt" target = "_blank">11. Семенов Дмитрий Сергеевич</a></p>
+	<p><a href = "http://vkontakte.ru/semin_roman" target = "_blank">12. Семин Роман Сергеевич</a></p>
+	<p><a href = "http://vkontakte.ru/c_k_y" target = "_blank">13. Скутин Сергей Викторович</a></p>
+	<p><a href = "http://vkontakte.ru/id5885546" target = "_blank">14. Федорин Владимир Александрович</a></p>
+	<p><a href = "http://vkontakte.ru/zooon" target = "_blank">15. Филиппов Андрей Александрович</a></p>
+	<p><a href = "http://vkontakte.ru/chaart target = "_blank"16. Чернышев Артем Андреевич </a></p>
+	<p><a href = "http://vkontakte.ru/shelgacheva" target = "_blank">17. Шелгачева Анастасия Сергеевна</a></p>
+	<center>
+	<br><br>
+  <h3>Список группы ИМ-47041</h3>
+	</center>
+	<p>1. Будченко Юлия Леонидовна</p> 
+	<p>2. Ганин Евгений Алексеевич</p>
+	<p>3. Гаптрахманова Русалина Ильдусовна</p>
+	<p>4. Гимранов Тимур Серикович</p>
+	<p>5. Изместьева Марина Юрьевна</p>
+	<p>6. Казанцева Ирина Александровна</p>
+	<p>7. Королев Андрей Николаевич</p>
+	<p>8. Миловидова Екатерина Владимировна</p>
+	<p>9. Неустроев Евгений Юрьевич</p>
+	<p>10. Привалов Владимир Николаевич</p>
+	<p>11. Пукман Виктор Александрович</p>
+	<p>12. Соломеин Леонид Евгеньевич</p>
+	<p>13. Сусол Екатерина Анатольевна</p>
+	<p>14. Титов Павел Евгеньевич</p> 
+	<p>15. Шалагин Дмитрий Сергеевич</p>
+	<p>16. Яцына Владимир Сергеевич</p>
+   <br><br>
+      <center>
+  <a href = "/main">Вернуться на главную страницу</a>
+  </center> 
+  </div>
+  
+   {% endblock %}
+  
+  

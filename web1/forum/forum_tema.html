@@ -1,0 +1,55 @@
+{% extends "../common/index.html" %}
+  {% block content %}
+  <table id="table1">
+    <tr>
+      <th id="th1" colspan='2' > {{theme_name}} </th>
+	</tr>
+
+    <tr>
+         <td width="120" align="center"><b>Автор</b></td>
+         <td width="600" align="center"><b>Сообщение</b></td>
+    </tr>
+    {% for mess in mesengers %}
+      {% if mess.author%}
+        <tr>
+          <td id="td1" width="120" align="center">{{mess.author.nickname}}</td>
+          <td id="td1" >{{mess.content}}</td>
+         
+        </tr>
+       {% else %}
+        <tr>
+          <td>Гость</td>
+          <td>{{mess.content}}</td>
+        </tr>
+        {% endif %}
+    {% endfor %}
+	
+        
+  </table>
+  
+	{%if username%}
+		<div id="form_div">
+			<form id="main_fon_form" name="Prov_mess" onSubmit="prov_mes_forum(); return(false);" action="/forum_send?mess_id={{mess_tema_id}}" method="post">
+				<div id="button_in_form_mess1">
+			    <input type="button" onclick="insrtBold(document.getElementById('mes_for_forum'))" value="Ж"/>
+          <input type="button" onclick="insrtItal(document.getElementById('mes_for_forum'))"  value="К"/>
+          <input type="button" onclick="insrtSmal(document.getElementById('mes_for_forum'))"  value="м"/>
+        </div>
+        <div id="div_in_main_form">
+				<textarea id="mes_for_forum" name="coment" rows="8" cols="120">{{coment}}</textarea>
+				</div>
+				<div id="button_in_form_mess2">
+				 <input type="submit" value= "Добавить сообщение" >
+        </div>
+		
+       
+			</form>
+			
+		</div>
+		<p><a href="/forum">Вернуться на главную страницу форума</a></p>
+		<p><a href="/main">На главную страницу сайта</a></p>
+	{% else %}
+		<p>Вы вошли как незарегистрированный пользователь. Для того, чтобы написать сообщение, необходимо зарегистрироваться <a href="{{url}}">Войти</a></p>
+	{% endif %}
+  
+  {% endblock %}

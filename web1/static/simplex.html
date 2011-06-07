@@ -1,0 +1,86 @@
+{% extends "../common/index.html" %}
+  {% block content %}
+  <div id="string"><marquee behavior="scroll" direction="left" scrollamount="8"> <font color="blue" size = "+1" >
+   Чтобы обнаруживать ошибки, программист должен иметь ум, которому доставляет удовольствие находить изъяны там, где, казалось, царят красота и совершенство. (Неизвестный автор)
+
+  </marquee></div>
+ <div id="nav">
+    <button id="button1" >О кафедре</button>
+    <button id="button2" >Расписание занятий</button>
+    <button id="button3" >Студенты кафедры</button>
+	<button id="button4" >Это пригодится</button>
+	<button id="button5" >Развлечения</button>
+    <button id="button6" onClick="window.location.href = '/contact'">Контактная информация</button>
+	<button id="button7" onClick="window.location.href = '/forum'">Форум</button>
+  </div>
+  
+<div id="layer_open_button1">
+      <ul id="the_menu1">
+        <li><a href = "/history" >История</a></li>
+        <li><a href = "/teachers">Преподаватели</a></li>
+        <li><a href = "/applicants">Абитуриентам</a></li> 
+  </div>
+  <div id="layer_open_button2">
+      <ul id="the_menu2">
+        <li><a href = "/1course">1 курс</a></li>
+        <li><a href = "/2course">2 курс</a></li>
+        <li><a href = "/3course">3 курс</a></li>
+		<li><a href = "/4course">4 курс</a></li>
+      </ul>
+  </div>
+  <div id="layer_open_button3">
+      <ul id="the_menu3">
+        <li><a href = "/bachelors">Бакалавры</a></li>
+        <li><a href = "/masters">Магистры</a></li>
+      </ul>
+  </div>
+  <div id="layer_open_button4">
+      <ul id="the_menu4">
+        <li><a href = "/ip">IP-calculator</a></li>
+        <li><a href = "/simplex">Симплекс-метод онлайн</a></li>
+        <li><a href = "/translate">Нахождение обратной матрицы</a></li>
+		<li><a href = "/slu">Решение СЛУ</a></li>
+      </ul>
+  </div>
+  <div id="layer_open_button5">
+      <ul id="the_menu5">
+        <li><a href = "/video">Видеоролики</a></li>
+        <li><a href = "/games">Игры</a></li>
+      </ul>
+  </div>
+   <div id="aside">
+     <div id="calendar">
+    <center><embed src="http://oyama-do.my1.ru/SWF/calendar.swf" width="200" height="200" wmode="transparent" type="application/x-shockwave-flash"></embed></center>
+    </div>
+    <h3>Статистика подготовки студентов к экзаменам, курсовым и т.п.</h3>
+    <p>58% студентов открывают материал за день до экзамена</p>
+    <p>22% студетов зубрят на протяжении недели до экзамена</p>
+    <p>и только 20% затрачивают на подготовку более двух недель</p>
+    <div id="cse" style="width: 250px;">Loading</div>
+	<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+	<script type="text/javascript"> 
+  		google.load('search', '1', {language : 'ru'});
+  		google.setOnLoadCallback(function() {
+    		var customSearchControl = new google.search.CustomSearchControl('007621152992589914345:yhuhbu6wndi');
+    		customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
+    		customSearchControl.draw('cse');
+  		}, true);
+	</script>
+	<link rel="stylesheet" href="http://www.google.com/cse/style/look/default.css" type="text/css" />
+   </div> 
+  <div id="content4"> 
+   
+       <center> <h1>Симплекс метод</h1>
+	   <p>Алгоритм решения оптимизационной задачи линейного программирования путём перебора вершин выпуклого 
+	   многогранника в многомерном пространстве. 
+	   Метод был разработан американским математиком Джорджем Данцигом (George Dantzig) в 1947 году.
+	   <p>Симплексный метод решения задачи линейного программирования основан на переходе от одного опорного плана к другому, при котором значение целевой функции возрастает (при условии, что данная задача имеет оптимальный план и каждый ее опорный план является невырожденным). Указанный переход возможен, если известен какой-нибудь исходный опорный план. 
+	   </p></p>
+	   <a href = "http://math.semestr.ru/simplex/simplex.php" alt = "Симплекс метод" target = "_blank">Решение симплекс методом онлайн</a>
+  <p><a href = "/main">Вернуться на главную страницу</a></p>
+  </center>
+  </div>
+  
+   {% endblock %}
+  
+  

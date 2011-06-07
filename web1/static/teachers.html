@@ -1,0 +1,196 @@
+{% extends "../common/index.html" %}
+  {% block content %}
+  <div id="string"><marquee behavior="scroll" direction="left" scrollamount="8"> <font color="blue" size = "+1">
+    Если у тебя на компьютере постоянно живут вирусы, то ещё надо подумать, кому в первую очередь надо лечиться.(Стас Янковский)
+  </marquee></div>
+ <div id="nav">
+    <button id="button1" >О кафедре</button>
+    <button id="button2" >Расписание занятий</button>
+    <button id="button3" >Студенты кафедры</button>
+	<button id="button4" >Это пригодится</button>
+	<button id="button5" >Развлечения</button>
+    <button id="button6" onClick="window.location.href = '/contact'">Контактная информация</button>
+	<button id="button7" onClick="window.location.href = '/forum'">Форум</button>
+  </div>
+  
+  <div id="layer_open_button1">
+      <ul id="the_menu1">
+        <li><a href = "/history" >История</a></li>
+        <li><a href = "/teachers">Преподаватели</a></li>
+        <li><a href = "/applicants">Абитуриентам</a></li> 
+  </div>
+  <div id="layer_open_button2">
+      <ul id="the_menu2">
+        <li><a href = "/1course">1 курс</a></li>
+        <li><a href = "/2course">2 курс</a></li>
+        <li><a href = "/3course">3 курс</a></li>
+		<li><a href = "/4course">4 курс</a></li>
+      </ul>
+  </div>
+  <div id="layer_open_button3">
+      <ul id="the_menu3">
+        <li><a href = "/bachelors">Бакалавры</a></li>
+        <li><a href = "/masters">Магистры</a></li>
+      </ul>
+  </div>
+  <div id="layer_open_button4">
+      <ul id="the_menu4">
+        <li><a href = "/ip">IP-calculator</a></li>
+        <li><a href = "/simplex">Симплекс-метод онлайн</a></li>
+        <li><a href = "/translate">Нахождение обратной матрицы</a></li>
+		<li><a href = "/slu">Решение СЛУ</a></li>
+      </ul>
+  </div>
+  <div id="layer_open_button5">
+      <ul id="the_menu5">
+        <li><a href = "/video">Видеоролики</a></li>
+        <li><a href = "/games">Игры</a></li>
+      </ul>
+  </div>
+   <div id="aside">
+     <div id="calendar">
+    <center><embed src="http://oyama-do.my1.ru/SWF/calendar.swf" width="200" height="200" wmode="transparent" type="application/x-shockwave-flash"></embed></center>
+    </div>
+    <h3>Статистика подготовки студентов к экзаменам, курсовым и т.п.</h3>
+    <p>58% студентов открывают материал за день до экзамена</p>
+    <p>22% студетов зубрят на протяжении недели до экзамена</p>
+    <p>и только 20% затрачивают на подготовку более двух недель</p>
+    <div id="cse" style="width: 250px;">Loading</div>
+	<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+	<script type="text/javascript"> 
+  		google.load('search', '1', {language : 'ru'});
+  		google.setOnLoadCallback(function() {
+    		var customSearchControl = new google.search.CustomSearchControl('007621152992589914345:yhuhbu6wndi');
+    		customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
+    		customSearchControl.draw('cse');
+  		}, true);
+	</script>
+	<link rel="stylesheet" href="http://www.google.com/cse/style/look/default.css" type="text/css" />
+   </div> 
+  <div id="content1"> 
+   <center>
+   <h2>Преподаватели кафедры</h2>
+    </center>    
+	<center>
+	<h3>Обабков Илья Николаевич</h3>
+	</center>
+	 <center>
+	<p><img src="image/obabkov.jpg"></p>
+	</center>
+	<center>
+	<p>Заведующий кафедрой интеллектуальных информационных технологий</p> 
+	<p>Kандидат технических наук</p> 
+	<p>Доцент</p>
+	</center>	
+
+	 <center>
+	<h3>Мокрушин Андрей Анатольевич</h3>
+	</center>
+	 <center>
+	<p><img src="image/mokrushin.jpg"></p>
+	</center>
+	<center>
+	<p>Старший преподаватель кафедры интеллектуальных информационных технологий</p> 
+	<p>Большой, лохматый, местами даже пушистый.</p> 
+	</center>	
+	
+	<center>
+	<h3>Бельков Сергей Александрович</h3>
+	</center>
+	 <center>
+	<p><img src="image/belkov.jpg"></p>
+	</center>
+	<center>
+	<p>Преподает C и C# на кафедре интеллектуальных информационных технологий</p> 
+	<p>Сочиняет стихи, музыку и сам исполняет</p> 
+	<p></p>
+	</center>	
+	
+	<center>
+	<h3>Расин Олег Вениаминович</h3>
+	</center>
+	 <center>
+	<p><img src="image/rasin.jpg"></p>
+	</center>
+	<center>
+	<p>Преподает основы дискретной математики на кафедре интеллектуальных информационных технологий</p>
+	<p>Очень веселый и позитивный преподаватель, играет в футбол</p>
+	</center>	
+	
+	<center>
+	<h3>Чернойван Василий Александрович</h3>
+	</center>
+	 <center>
+	<p><img src="image/chernoivan.jpg"></p>
+	</center>
+	<center>
+	<p>Преподает основы объекто-ориентированного программирования на кафедре интеллектуальных информационных технологий</p> 
+	<p>Очень серьёзный преподаватель</p> 
+	<p></p>
+	</center>	
+
+	<center>
+	<h3>Томашевич Виктор Григорьевич</h3>
+	</center>
+	 <center>
+	<p><img src="image/tomashevich.jpg"></p>
+	</center>
+	<center>
+	<p>Преподает основы программирования на кафедре интеллектуальных информационных технологий</p> 
+	<p>Запомните: Код - это программный код, а кот - это тот, который пушистый.</p> 
+	</center>
+
+	<center>
+	<h3>Вшивкова Ирина Сергеевна</h3>
+	</center>
+	 <center>
+	<p><img src="image/vshivkova.jpg"></p>
+	</center>
+	<center>
+	<p>Преподает информационный менеджмент на кафедре интеллектуальных информационных технологий</p> 
+	</center>	
+
+	<center>
+	<h3>Озорнин Прохор Николаевич</h3>
+	</center>
+	 <center>
+	<p><img src="image/ozornin.jpg"></p>
+	</center>
+	<center>
+	<p>Преподает технологии баз данных на кафедре интеллектуальных информационных технологий</p>
+	<p>Пишет стихи и прозу</p>
+	</center>
+	
+	<center>
+	<h3>Лимановская Оксана Викторовна</h3>
+	</center>
+	<center>
+	<p>Преподает моделирование информационных процессов на кафедре интеллектуальных информационных технологий</p> 
+	</center>	
+	<center>
+	<h3>Кругликов Алексей Сергеевич</h3>
+	</center>
+	<center>
+	<p>Преподает компьютерную графику на кафедре интеллектуальных информационных технологий</p> 
+	</center>
+	<center>
+	<h3>Королёв Дмитрий Владимирович</h3>
+	</center>
+	<center>
+	<p>Преподает каналы передачи данных на кафедре интеллектуальных информационных технологий</p> 
+	</center>	
+	<center>
+	<h3>Свинцов Дмитрий Владимирович</h3>
+	</center>
+	<center>
+	<p>Преподает основы WEB-программирования на кафедре интеллектуальных информационных технологий</p> 
+	</center>		
+   
+        <center>
+  <a href = "/main">Вернуться на главную страницу</a>
+  </center>
+  </div>
+ 
+   {% endblock %}
+  
+  

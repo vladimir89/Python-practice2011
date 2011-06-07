@@ -1,0 +1,45 @@
+{% extends "../common/index.html" %}
+  {% block content %}
+  <div id="forum">
+  <table id="table_main">
+    <tr>
+      <th width="120">Автор темы</th>
+      <th width="110">Создана</th>
+      <th width="400">Тема</th>
+      <th width="60"><p>Количество сообщений</p> </th>
+      <th width="120"> Последнее сообщение написал</th>
+	  <th width="110"> Дата последнего сообщения </th>
+    </tr>
+      {% for tema in tems %}
+	    <tr>
+     <td align="center" >{{tema.author_tema}}</td>
+     <td align="center" >{{tema.first_date}}</td>
+     <td align="center" ><a href= "/forum_id?id={{tema.id}}">{{tema.content}}</a></td>
+		 <td align="center" >{{tema.amount_mess}}</td>
+		 <td align="center" >{{tema.author_post}}</td>
+		 <td align="center" >{{tema.date}}</td>
+      </tr>   
+      <tr>
+        <th id="th1" colspan='6' height="3" ></th>
+      </tr>                                           
+       {% endfor %}
+  </table>
+        {% if username %}  
+			<div id="form_main_div">
+				<form id="main_fon_form_mess" name="Prov" onSubmit="prov(); return(false);" action="/forum_tema_send" method="post">
+				<div id="div_in_form">
+					<textarea name="tema_cont" rows="3" cols="87">{{tema_cont}}</textarea>
+				</div>
+				<div id="button_in_form">
+				<input type="submit" value="Добавить тему">
+				</div>
+				</form>
+			</div>
+			<p><a href="/main">На главную страницу сайта</a></p>
+		{% else %}
+			<p>Вы вошли как незарегистрированный пользователь. Для того, чтобы создать тему, необходимо зарегистрироваться <a href="{{url}}">Войти</a></p>
+			<p><a href = "/main" >Вернуться на главную страницу</a></p>
+		{%endif%}	
+    
+  </div>
+   {% endblock %}
